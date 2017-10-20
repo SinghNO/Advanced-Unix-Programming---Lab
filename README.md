@@ -1,6 +1,6 @@
 # Advanced-Unix-Programming---Lab
 Assignments
-Lab X
+Lab X/
   Xq1.c
   Xq2.c
   Xq3.c
