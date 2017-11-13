@@ -72,7 +72,7 @@ int match(char *word, int fd) {
 	char line[MAXLENGTH];
 	char c;
 	int i, n;
-	while(((n = read(fd, line, MAXLENGTH)) > 0) && (flag != 1)) {
+	while((n = read(fd, line, MAXLENGTH)) > 0) {
 		if(strstr(line, word) != NULL) {
 			printf("The pattern is %s\n", line);
 			return 1;
