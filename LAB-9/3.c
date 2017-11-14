@@ -58,12 +58,12 @@ int main(int argc, char *argv[]) {
 		printf("Enter a valid possitive number\n");
 		return 1;
 	}
-	alarm(1);
+	alarm(3);
 	signal(SIGALRM, pass);
 	unslept = sleep_aup(a);
 	printf("Number of unslept seconds = %d\n", unslept);
 	if(signal(SIGALRM, SIG_DFL) == pass) {
-		printf("Sucessfull\n");
+		printf("Sucessfully restored desposition\n");
 	}
 	return 0;
 }

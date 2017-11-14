@@ -6,10 +6,6 @@ int main(int argc, char *argv[]) {
 		printf("Arguements are insufficient\n");
 		return 1;
 	}
-	uid_t ruid, euid;
-	ruid = getuid();
-	euid = geteuid();
-	printf("reuid = %u euid = %u \n", ruid, euid);
 	setuid(2000);
 	execv("/bin/cat", argv);
 	return 0;
