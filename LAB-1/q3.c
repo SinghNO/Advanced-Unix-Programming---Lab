@@ -8,7 +8,7 @@
 int main(int argc, char *argv[]) {
 	// 1st part  
 	int fd;
-	char *f1;
+	char *f1, c;
 	char *buf = "abcde";
 	char *new = "12345";
 	int size = strlen(buf);
@@ -32,6 +32,9 @@ int main(int argc, char *argv[]) {
 	// 4th part
 	size = strlen(new);
 	write(fd, new, size);
+	int ret = read(fd, &c, 1);
+	printf("ret = %d\n", ret);
+	putchar(c);
 	close(fd);
 	return 0;
 }

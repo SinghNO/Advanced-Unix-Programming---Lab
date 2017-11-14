@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <limits.h>
 #define SIZE 4
-#define ITERATION 10
+#define ITERATION 16
 union semun {
 	int val;
 	struct semid_ds *buf;

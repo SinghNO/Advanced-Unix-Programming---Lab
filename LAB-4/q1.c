@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <unistd.h>
 extern char **environ;
 
 void printAll();
@@ -16,6 +16,7 @@ int main(int argc, char *argv[]) {
 	printf("-----NEW ADDITION CORRESPONDING TO COMMAND LINE INPUT----\n");
 	addNew(argv[1], argv[2]);
 	printAll();
+	pause();
 	return 0;
 }
 

@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 	ruid = getuid();
 	euid = geteuid();
 	printf("reuid = %u euid = %u \n", ruid, euid);
-	setuid(ruid);
+	setuid(2000);
 	execv("/bin/cat", argv);
 	return 0;
 }
