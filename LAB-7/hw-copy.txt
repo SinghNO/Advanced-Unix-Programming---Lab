@@ -1,2 +1,0 @@
-This will go to hw-copy.txt and not standard output
-This is this integer taken as input from hw.txt 111403076
